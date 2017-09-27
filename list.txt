@@ -1,0 +1,8 @@
+go install migrations vendor/github.com/Synesis-LLC/migrate && migrations && migrate -url cassandra://kx-cassandra:9042/kx_data -path /go/src/test_migrations up
+docker rm -vf `docker ps -aq`
+rtsp://172.20.9.136/AutoUiTestFaceTrack
+go test -v -cover -coverprofile cover.out event-proxy && go tool cover -func=cover.out && go tool cover -html=cover.out -o src/cover.html
+rtsp://172.20.9.136/SideTrack_transition_hd
+rtsp://172.20.9.136/AutoUiTestSideTrackBasicTrack
+rtsp://172.20.9.136/AutoUiTestSideTrack
+kubectl expose svc kx-ignite-svc --name=test-ignite-2 --port=8080 --external-ip=192.168.99.100

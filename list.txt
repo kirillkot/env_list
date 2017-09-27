@@ -6,3 +6,5 @@ rtsp://172.20.9.136/SideTrack_transition_hd
 rtsp://172.20.9.136/AutoUiTestSideTrackBasicTrack
 rtsp://172.20.9.136/AutoUiTestSideTrack
 kubectl expose svc kx-ignite-svc --name=test-ignite-2 --port=8080 --external-ip=192.168.99.100
+
+kubectl exec kx-channel-000001-4173556127-r9755 -- tcpdump -w - | sudo wireshark -k -i -

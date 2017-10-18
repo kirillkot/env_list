@@ -10,9 +10,11 @@ Plug 'easymotion/vim-easymotion'
 Plug 'rking/ag.vim'
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'yggdroot/indentline'
 
 "colorschemes
 Plug 'morhetz/gruvbox'
+Plug 'chriskempson/tomorrow-theme'
 
 "Go-lang
 Plug 'fatih/vim-go'
@@ -27,10 +29,10 @@ set background=dark
 set number
 set expandtab
 set tabstop=4
+set cursorline
 
 set hlsearch
 set incsearch
-
 
 "mappings 
 
@@ -55,3 +57,4 @@ function! WinMove(key)
     exec "wincmd ".a:key
   endif
 endfunction
+
